@@ -1,0 +1,74 @@
+2019-05-31 13:15:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#1 D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServers\OSPanel_Basic_5_2_9\domains\reg\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-31 13:15:56 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'fc8mg8c9elpnc8dv4sv2i5gbq67gdd9p'
+    '_csrf' => 'd66ce635e688cd0d9f8eacbb806bb0995109c819a9addb627b71db3a8a7a1de1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5j9hdboD6dL4aud219GfTHeHx8gtLs0H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'cqbiikh'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'reg'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=fc8mg8c9elpnc8dv4sv2i5gbq67gdd9p; _csrf=d66ce635e688cd0d9f8eacbb806bb0995109c819a9addb627b71db3a8a7a1de1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225j9hdboD6dL4aud219GfTHeHx8gtLs0H%22%3B%7D'
+    'PATH' => 'd:\\openservers\\ospanel_basic_5_2_9\\modules\\php\\PHP-7.2-x64\\ext;d:\\openservers\\ospanel_basic_5_2_9\\modules\\php\\PHP-7.2-x64\\pear;d:\\openservers\\ospanel_basic_5_2_9\\modules\\php\\PHP-7.2-x64\\pear\\bin;d:\\openservers\\ospanel_basic_5_2_9\\modules\\php\\PHP-7.2-x64;d:\\openservers\\ospanel_basic_5_2_9\\modules\\imagemagick;d:\\openservers\\ospanel_basic_5_2_9\\modules\\wget\\bin;d:\\openservers\\ospanel_basic_5_2_9\\modules\\database\\MySQL-5.8-x64\\bin;d:\\openservers\\ospanel_basic_5_2_9\\modules\\memcached\\Memcached-1.5-x64;d:\\openservers\\ospanel_basic_5_2_9\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;d:\\openservers\\ospanel_basic_5_2_9\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'reg'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServers/OSPanel_Basic_5_2_9/domains/reg'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServers/OSPanel_Basic_5_2_9/domains/reg'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServers/OSPanel_Basic_5_2_9/domains/reg/web/index.php'
+    'REMOTE_PORT' => '53547'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1559297756.48
+    'REQUEST_TIME' => 1559297756
+    'argv' => []
+    'argc' => 0
+]

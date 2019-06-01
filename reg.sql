@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 31 2019 г., 22:08
+-- Время создания: Июн 01 2019 г., 15:43
 -- Версия сервера: 5.7.23
 -- Версия PHP: 7.2.10
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
+  `user_type` tinyint(1) NOT NULL DEFAULT '0',
   `name` varchar(255) NOT NULL,
   `surname` varchar(255) NOT NULL,
   `patronymic` varchar(255) NOT NULL,
@@ -56,7 +57,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

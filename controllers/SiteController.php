@@ -6,6 +6,9 @@ use app\models\Users;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\web\JsonResponseFormatter;
+use yii\web\Response;
+use yii\web\User;
 
 class SiteController extends Controller
 {
@@ -44,19 +47,11 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = new Users;
-        $attributes = Yii::$app->request->post();
 
-        if( isset($attributes['Users']) ) {
-
-            if( !$attributes['Users']['user_type'] ) {
-                $attributes['Users']['company'] = null;
-            }
-
-            if ($model->load($attributes) && $model->validate()) {
-                $model->save(false);
-                Yii::$app->session->addFlash('success', 'Пользователь был успешно зарегистрирован!');
-                return $this->redirect(['/']);
-            }
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $model->save(false);
+            Yii::$app->session->addFlash('success', 'Пользователь был успешно зарегистрирован!');
+            return $this->redirect(['/']);
         }
 
         if( $model->isNewRecord ) {

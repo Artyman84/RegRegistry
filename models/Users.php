@@ -8,6 +8,7 @@ use Yii;
  * This is the model class for table "users".
  *
  * @property int $id
+ * @property int $user_type
  * @property string $name
  * @property string $surname
  * @property string $patronymic
@@ -17,9 +18,6 @@ use Yii;
  */
 class Users extends \yii\db\ActiveRecord
 {
-
-    public $user_type;
-
     /**
      * {@inheritdoc}
      */
@@ -35,15 +33,11 @@ class Users extends \yii\db\ActiveRecord
     {
         return [
             [
-                ['name', 'surname', 'patronymic', 'email'],
+                ['user_type', 'name', 'surname', 'patronymic', 'email'],
                 'required'
             ],
             [
-                ['user_type'],
-                'integer'
-            ],
-            [
-                ['inn'],
+                ['inn', 'user_type'],
                 'integer'
             ],
             [
